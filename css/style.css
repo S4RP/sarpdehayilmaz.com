@@ -48,6 +48,7 @@ nav {
   color: var(--white);
   text-decoration: none;
   letter-spacing: 0.5px;
+  white-space: nowrap;
 }
 
 .nav-logo span { color: var(--gold); }
@@ -68,6 +69,7 @@ nav {
   letter-spacing: 0.3px;
   border-radius: 6px;
   transition: all 0.2s;
+  white-space: nowrap;
 }
 
 .nav-links a:hover,
@@ -510,6 +512,7 @@ footer a {
 @media (max-width: 900px) {
   .home-hero { grid-template-columns: 1fr; }
   .home-photo-col { height: 55vh; }
+  .home-photo-col img { object-position: left 20%; }
   .home-content-col { padding: 3rem 2rem; }
   .cv-header { flex-direction: column; }
   .cv-contact { text-align: left; }
