@@ -480,6 +480,10 @@ nav {
   grid-row: 4;
 }
 
+.collage-wide img {
+  object-position: center 15%;
+}
+
 .personal-traits {
   display: flex;
   flex-wrap: wrap;
