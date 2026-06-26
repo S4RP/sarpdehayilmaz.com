@@ -442,23 +442,13 @@ nav {
 .collage-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 180px);
+  grid-template-rows: repeat(4, 160px);
   gap: 0.75rem;
-  border-radius: 16px;
-  overflow: hidden;
 }
 
 .collage-slot {
   background: linear-gradient(135deg, var(--navy) 0%, var(--accent) 100%);
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: rgba(255,255,255,0.4);
-  letter-spacing: 1px;
-  text-transform: uppercase;
   overflow: hidden;
   position: relative;
 }
@@ -470,11 +460,11 @@ nav {
   display: block;
 }
 
-.collage-slot:first-child {
-  grid-row: span 2;
+.collage-hero {
+  grid-row: span 3;
 }
 
-.collage-slot:nth-child(5) {
+.collage-wide {
   grid-column: span 2;
 }
 
