@@ -105,6 +105,8 @@ nav {
   overflow: hidden;
 }
 
+.home-photo-col picture { display: contents; }
+
 .home-photo-col img {
   width: 100%;
   height: 100%;
@@ -511,8 +513,9 @@ footer a {
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .home-hero { grid-template-columns: 1fr; }
-  .home-photo-col { height: 55vh; }
-  .home-photo-col img { object-position: left 20%; }
+  .home-photo-col { height: 30vh; justify-content: flex-start; align-items: flex-end; }
+  .home-photo-col img { width: auto; height: 80%; object-fit: contain; object-position: left bottom; }
+  .home-photo-col .photo-overlay { height: 50px; }
   .home-content-col { padding: 3rem 2rem; }
   .cv-header { flex-direction: column; }
   .cv-contact { text-align: left; }
